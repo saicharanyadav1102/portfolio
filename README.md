@@ -44,7 +44,7 @@ portfolio11/
 ├── index.html       # Main HTML document and layout structure
 ├── style.css        # Custom CSS animations, transitions, and keyframes
 ├── script.js        # JavaScript logic (Theme toggle, mobile menu, animations, image upload)
-├── sai.jpg          # Profile photo asset
+├── your_photo.jpg          # Profile photo asset
 └── README.md        # Project documentation
 ```
 
@@ -92,9 +92,9 @@ No Node.js or heavy build tools are required! This website runs directly in any 
 ## 📬 Contact & Connect
 
 **KV Saicharan Yadav**
-- **Email**: [saicharanyadav1102@gmail.com](mailto:saicharanyadav1102@gmail.com)
-- **LinkedIn**: [linkedin.com/in/sai-charan](https://linkedin.com/in/sai-charan)
-- **Phone**: +91-6302356629
+- **Email**: [click here](mailto:saicharanyadav1102@gmail.com)
+- **LinkedIn**: [click here](https://linkedin.com/in/sai-charan112)
+- **Phone**: +91-630235XXXX
 
 ---
 
