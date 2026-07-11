@@ -1,10 +1,56 @@
 /* Global Typography & Smooth Transitions */
-body {
-    font-family: 'Inter', sans-serif;
+html, body, button, input, textarea, select {
+    font-family: "Google Sans", Arial, sans-serif;
 }
 
 * {
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Scroll Layer Layout */
+main {
+    position: relative;
+    background: #f4f4f4;
+}
+
+.about-base {
+    position: sticky;
+    top: 5rem;
+    z-index: 1;
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    background: rgba(254, 254, 255, 0.96);
+}
+
+.dark .about-base {
+    background: rgba(0, 0, 0, 0.96);
+}
+
+.normal-scroll-section {
+    position: relative;
+    z-index: 3;
+}
+
+#strengths, #projects, #skills, #contact {
+    background: #ffffff;
+}
+
+.dark #strengths, .dark #projects, .dark #skills, .dark #contact {
+    background: #000000;
+}
+
+.about-base, .normal-scroll-section {
+    scroll-margin-top: 5.5rem;
+}
+
+@media (max-width: 767px) {
+    .about-base {
+        position: relative;
+        top: auto;
+        min-height: auto;
+    }
 }
 
 /* Section Entry Animations */
@@ -68,7 +114,7 @@ body {
 /* Experience List Staggered Items */
 .exp-list-item {
     opacity: 0;
-    transform: translateX(-15px);
+    transform: translateX(-15px); 
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
