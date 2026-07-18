@@ -210,3 +210,22 @@ section {
 .dark .project-filter-btn.active {
     box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.3);
 }
+
+/* Interactive GitHub Popup Button Hover Effects */
+.github-popup-btn {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+    will-change: transform, box-shadow;
+}
+
+.github-popup-btn:hover {
+    transform: translateY(-5px) scale(1.03) !important;
+    box-shadow: 0 16px 32px -8px rgba(24, 24, 27, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .github-popup-btn:hover {
+    box-shadow: 0 16px 32px -8px rgba(255, 255, 255, 0.22), 0 8px 16px -4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.github-popup-btn:active {
+    transform: translateY(-2px) scale(0.99) !important;
+}
