@@ -312,14 +312,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                 </svg>
-                Triggering Auto-Reply Bot...
+                Sending Message...
             `;
 
             // Check if user has entered their real Web3Forms access key
             const web3formsKey = '6efe7443-5df3-4a51-b3de-f5abab78d3d7'; // <-- Your active Web3Forms Key
 
             if (!web3formsKey || web3formsKey === 'YOUR_WEB3FORMS_ACCESS_KEY' || web3formsKey.includes('YOUR_')) {
-                console.warn('⚠️ [PortfolioBot Notice] Real email delivery is waiting for your free Web3Forms API Key!');
+                console.warn('⚠️ [Portfolio Notice] Real email delivery is waiting for your free Web3Forms API Key!');
                 console.info('👉 Get your free key in 10 seconds at: https://web3forms.com (no backend/server needed)');
                 console.info('👉 Then replace "YOUR_WEB3FORMS_ACCESS_KEY" in script.js line 319 with your actual key.');
             } else {
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             email: email,
                             message: message,
                             subject: `New Portfolio Inquiry from ${name}`,
-                            from_name: 'PortfolioBot Auto-Responder'
+                            from_name: 'Portfolio Contact Form'
                         })
                     })
                     .then(response => response.json())
