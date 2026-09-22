@@ -380,4 +380,66 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === botReplyModal) closeModal();
         });
     }
+
+    // ===== ROBOTIC HOVER SOUND (SCI-FI WOOP) =====
+    let audioCtx = null;
+    let isAudioEnabled = false;
+
+    // Enable audio on first user interaction to bypass browser autoplay policies
+    const enableAudio = () => {
+        if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+        }
+        isAudioEnabled = true;
+        document.removeEventListener('click', enableAudio);
+        document.removeEventListener('keydown', enableAudio);
+    };
+    document.addEventListener('click', enableAudio);
+    document.addEventListener('keydown', enableAudio);
+
+    function playRoboticWoop() {
+        if (!isAudioEnabled || !audioCtx) return;
+        
+        const osc = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+        const filter = audioCtx.createBiquadFilter();
+        
+        // Metallic edge
+        osc.type = 'sawtooth'; 
+        
+        // Bandpass filter to make it sound "robotic/hollow"
+        filter.type = 'bandpass';
+        filter.frequency.value = 800;
+        filter.Q.value = 5;
+        
+        const now = audioCtx.currentTime;
+        
+        // Pitch sweep - starts low, sweeps up fast (classic mechanical woop)
+        osc.frequency.setValueAtTime(100, now); 
+        osc.frequency.exponentialRampToValueAtTime(600, now + 0.15); 
+        
+        // Volume envelope - fast attack, quick decay
+        gainNode.gain.setValueAtTime(0, now);
+        gainNode.gain.linearRampToValueAtTime(0.04, now + 0.02); // Keep volume low/subtle (0.04)
+        gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.15); 
+        
+        osc.connect(filter);
+        filter.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        
+        osc.start(now);
+        osc.stop(now + 0.15);
+    }
+
+    // Attach to the edges/cards (projects, skills, interactive plates)
+    const hoverPlates = document.querySelectorAll('.interactive-card, .project-item');
+    hoverPlates.forEach(plate => {
+        plate.addEventListener('mouseenter', () => {
+            playRoboticWoop();
+        });
+    });
+
 });
