@@ -418,7 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Volume envelope - fast attack, quick decay
         gainNode.gain.setValueAtTime(0, now);
-        gainNode.gain.linearRampToValueAtTime(0.06, now + 0.02); // Slightly louder since sine waves sound quieter
+        gainNode.gain.linearRampToValueAtTime(0.2, now + 0.02); // Increased volume to 20%
         gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.15); 
         
         osc.connect(gainNode);
