@@ -405,29 +405,23 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const osc = audioCtx.createOscillator();
         const gainNode = audioCtx.createGain();
-        const filter = audioCtx.createBiquadFilter();
         
-        // Metallic edge
-        osc.type = 'sawtooth'; 
-        
-        // Bandpass filter to make it sound "robotic/hollow"
-        filter.type = 'bandpass';
-        filter.frequency.value = 800;
-        filter.Q.value = 5;
+        // Sine wave produces a pure, whistle-like tone
+        osc.type = 'sine'; 
         
         const now = audioCtx.currentTime;
         
-        // Pitch sweep - starts low, sweeps up fast (classic mechanical woop)
-        osc.frequency.setValueAtTime(100, now); 
-        osc.frequency.exponentialRampToValueAtTime(600, now + 0.15); 
+        // Pitch sweep - high pitched robotic chirp/whistle (like R2D2)
+        osc.frequency.setValueAtTime(1200, now); // Start high
+        osc.frequency.exponentialRampToValueAtTime(2800, now + 0.08); // Quick jump up
+        osc.frequency.exponentialRampToValueAtTime(2000, now + 0.15); // Slight drop at end
         
         // Volume envelope - fast attack, quick decay
         gainNode.gain.setValueAtTime(0, now);
-        gainNode.gain.linearRampToValueAtTime(0.04, now + 0.02); // Keep volume low/subtle (0.04)
+        gainNode.gain.linearRampToValueAtTime(0.06, now + 0.02); // Slightly louder since sine waves sound quieter
         gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.15); 
         
-        osc.connect(filter);
-        filter.connect(gainNode);
+        osc.connect(gainNode);
         gainNode.connect(audioCtx.destination);
         
         osc.start(now);
