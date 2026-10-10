@@ -23,42 +23,42 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-zinc-900 selection:text-white dark:selection:bg-white dark:selection:text-zinc-900">
+<body class="bg-zinc-50 text-zinc-800 dark:bg-[#0a0a0a] dark:text-zinc-100 antialiased selection:bg-zinc-900 selection:text-zinc-50 dark:selection:bg-white dark:selection:text-zinc-900">
 
     <!-- Top Scroll Progress Indicator -->
     <div id="scroll-progress-bar" class="fixed top-0 left-0 h-1.5 bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-500 dark:from-white dark:via-zinc-300 dark:to-zinc-500 z-[100] transition-all duration-150 shadow-sm" style="width: 0%"></div>
 
     <!-- Theme Toggle -->
-    <button id="theme-toggle" class="theme-toggle fixed bottom-6 right-6 z-[100] w-14 h-14 rounded-full flex items-center justify-center shadow-xl border-2 bg-slate-900 text-white border-slate-700 dark:bg-white dark:text-slate-950 dark:border-slate-200 hover:shadow-2xl" aria-label="Toggle theme">
+    <button id="theme-toggle" class="theme-toggle fixed bottom-6 right-6 z-[100] w-14 h-14 rounded-full flex items-center justify-center shadow-xl border-2 bg-zinc-900 text-zinc-50 border-zinc-700 dark:bg-white dark:text-zinc-950 dark:border-zinc-200 hover:shadow-2xl" aria-label="Toggle theme">
         <svg id="icon-sun" class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
         <svg id="icon-moon" class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
     </button>
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 backdrop-blur-md shadow-sm border-b bg-white/90 border-slate-200/80 dark:bg-slate-950/90 dark:border-slate-800/80">
+    <header class="sticky top-0 z-50 backdrop-blur-md shadow-sm border-b bg-white/90 border-zinc-200/80 dark:bg-[#0a0a0a]/90 dark:border-zinc-800">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <a href="#home" class="text-2xl font-bold text-zinc-900 dark:text-zinc-50 tracking-tight flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-zinc-900 dark:bg-white"></span>
                 KV Saicharan Yadav
             </a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="#about" class="text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium transition duration-300">About</a>
-                <a href="#experience" class="text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium transition duration-300">Experience</a>
-                <a href="#projects" class="text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium transition duration-300">Projects</a>
-                <a href="#skills" class="text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium transition duration-300">Skills</a>
-                <a href="#education" class="text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium transition duration-300">Education</a>
+                <a href="#about" class="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium transition duration-300">About</a>
+                <a href="#experience" class="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium transition duration-300">Experience</a>
+                <a href="#projects" class="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium transition duration-300">Projects</a>
+                <a href="#skills" class="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium transition duration-300">Skills</a>
+                <a href="#education" class="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium transition duration-300">Education</a>
                 <a href="#contact" class="bg-zinc-100 text-zinc-900 border border-zinc-300 hover:bg-zinc-200 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 px-4 py-2 rounded-lg transition duration-300 font-semibold shadow-sm">Contact</a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden text-slate-900 dark:text-white">
+            <button id="mobile-menu-button" class="md:hidden text-zinc-900 dark:text-zinc-50">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
-            <a href="#about" class="block py-2 text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium">About</a>
-            <a href="#experience" class="block py-2 text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium">Experience</a>
-            <a href="#projects" class="block py-2 text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium">Projects</a>
-            <a href="#skills" class="block py-2 text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium">Skills</a>
-            <a href="#education" class="block py-2 text-slate-700 hover:text-zinc-900 dark:text-slate-300 dark:hover:text-white font-medium">Education</a>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0a0a0a]">
+            <a href="#about" class="block py-2 text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium">About</a>
+            <a href="#experience" class="block py-2 text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium">Experience</a>
+            <a href="#projects" class="block py-2 text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium">Projects</a>
+            <a href="#skills" class="block py-2 text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium">Skills</a>
+            <a href="#education" class="block py-2 text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50 font-medium">Education</a>
             <a href="#contact" class="block mt-2 bg-zinc-100 text-zinc-900 border border-zinc-300 hover:bg-zinc-200 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 px-4 py-2 rounded-lg text-center font-semibold transition duration-300 shadow-sm">Contact</a>
         </div>
     </header>
@@ -66,41 +66,41 @@
     <main id="main-content" class="w-full overflow-hidden">
 
         <!-- Hero Section (Full Width with Backdrop Glow) -->
-        <section id="home" class="relative min-h-[88vh] flex flex-col justify-center items-center py-24 bg-gradient-to-b from-slate-50 via-zinc-200/40 to-slate-100 dark:from-slate-950 dark:via-zinc-900/40 dark:to-slate-950 border-b border-slate-200/80 dark:border-slate-800/80 overflow-hidden">
+        <section id="home" class="relative min-h-[88vh] flex flex-col justify-center items-center py-24 bg-gradient-to-b from-zinc-50 via-zinc-200/40 to-zinc-100 dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950 border-b border-zinc-200/80 dark:border-zinc-800 overflow-hidden">
             <!-- Decorative Floating Glow Orbs -->
             <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-zinc-500/10 dark:bg-zinc-400/10 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
             <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-zinc-700/10 dark:bg-zinc-300/10 rounded-full blur-3xl pointer-events-none animate-pulse" style="animation-delay: 1.5s;"></div>
 
             <div class="container mx-auto px-6 max-w-4xl relative z-10 text-center">
-                <span class="text-zinc-900 dark:text-white font-bold tracking-wider text-sm uppercase bg-white/80 dark:bg-zinc-900/80 px-4 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 inline-block mb-3 shadow-sm backdrop-blur-sm">Undergraduate at Mohan Babu University</span>
+                <span class="text-zinc-900 dark:text-zinc-50 font-bold tracking-wider text-sm uppercase bg-white/80 dark:bg-zinc-900/80 px-4 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 inline-block mb-3 shadow-sm backdrop-blur-sm">Undergraduate at Mohan Babu University</span>
                 <div class="relative inline-block">
-                    <h1 id="hero-name" class="text-4xl md:text-6xl font-extrabold mt-2 mb-3 text-slate-900 dark:text-white tracking-tight leading-tight select-none">KV Saicharan Yadav</h1>
+                    <h1 id="hero-name" class="text-4xl md:text-6xl font-extrabold mt-2 mb-3 text-zinc-900 dark:text-zinc-50 tracking-tight leading-tight select-none">KV Saicharan Yadav</h1>
                     <div class="mb-5">
-                        <span id="hero-name-hint" class="text-xs text-zinc-900 dark:text-white font-bold opacity-90 tracking-wide uppercase bg-zinc-100/90 dark:bg-zinc-900/80 px-3 py-1 rounded-full border border-zinc-300 dark:border-zinc-700 inline-flex items-center gap-1.5 shadow-sm animate-pulse cursor-pointer">
+                        <span id="hero-name-hint" class="text-xs text-zinc-900 dark:text-zinc-50 font-bold opacity-90 tracking-wide uppercase bg-zinc-100/90 dark:bg-zinc-900/80 px-3 py-1 rounded-full border border-zinc-300 dark:border-zinc-700 inline-flex items-center gap-1.5 shadow-sm animate-pulse cursor-pointer">
                             <span></span> Hover across letters or Click my name for magic!
                         </span>
                     </div>
                 </div>
                 <p class="text-lg md:text-xl font-light text-zinc-900 dark:text-zinc-100 mb-8 max-w-2xl mx-auto leading-relaxed md:leading-loose tracking-wide">I don't just write code—I craft digital experiences engineered for scale and impact. Constantly striving for greatness, I am dedicated to contributing to world-class teams and emerging as a standout symbol of innovation and achievement.</p>
                 <div class="flex justify-center items-center space-x-4">
-                    <a href="#projects" class="bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-zinc-950 px-7 py-3.5 rounded-xl font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">View My Work</a>
-                    <a href="#contact" class="bg-white dark:bg-slate-900 text-slate-900 dark:text-white border-2 border-slate-300 dark:border-slate-700 px-7 py-3.5 rounded-xl font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition duration-300 shadow-sm">Get in Touch</a>
+                    <a href="#projects" class="bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 px-7 py-3.5 rounded-xl font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-tranzinc-y-0.5">View My Work</a>
+                    <a href="#contact" class="bg-white dark:bg-black text-zinc-900 dark:text-zinc-50 border-2 border-zinc-300 dark:border-zinc-700 px-7 py-3.5 rounded-xl font-bold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition duration-300 shadow-sm">Get in Touch</a>
                 </div>
                 <!-- Profile Image -->
                 <div class="flex flex-col items-center mt-10">
                     <label for="profileImageInput" class="cursor-pointer group relative">
-                        <img id="profileImagePreview" src="SAI.png" alt="Profile Image" class="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-slate-800 shadow-xl ring-4 ring-zinc-500/20 dark:ring-zinc-400/20 transition duration-300 group-hover:scale-105">
+                        <img id="profileImagePreview" src="SAI.png" alt="Profile Image" class="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-zinc-800 shadow-xl ring-4 ring-zinc-500/20 dark:ring-zinc-400/20 transition duration-300 group-hover:scale-105">
                         <input type="file" id="profileImageInput" accept="image/*" class="hidden">
                     </label>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8 mt-7">
-                    <a href="https://linkedin.com/in/sai-charan112" target="_blank" rel="noopener noreferrer" class="social-popup-btn inline-flex items-center justify-center p-3.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/sai-charan112" target="_blank" rel="noopener noreferrer" class="social-popup-btn inline-flex items-center justify-center p-3.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm" aria-label="LinkedIn">
                         <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-11 group-hover:rotate-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
                     </a>
-                    <a href="https://github.com/saicharanyadav1102" target="_blank" rel="noopener noreferrer" class="social-popup-btn inline-flex items-center justify-center p-3.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm" aria-label="GitHub">
+                    <a href="https://github.com/saicharanyadav1102" target="_blank" rel="noopener noreferrer" class="social-popup-btn inline-flex items-center justify-center p-3.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm" aria-label="GitHub">
                         <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-11 group-hover:-rotate-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                     </a>
-                    <a href="mailto:saicharanyadav1102@gmail.com" class="social-popup-btn inline-flex items-center justify-center p-3.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm" aria-label="Email">
+                    <a href="mailto:saicharanyadav1102@gmail.com" class="social-popup-btn inline-flex items-center justify-center p-3.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm" aria-label="Email">
                         <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-11 group-hover:rotate-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9 6 9-6"/><path d="M21 8v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8"/></svg>
                     </a>
                 </div>
@@ -108,79 +108,79 @@
         </section>
 
         <!-- About Me & Strengths (Full Width Alternating Section) -->
-        <section id="about" class="py-24 md:py-32 section-fade-in bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800/80 relative">
+        <section id="about" class="py-24 md:py-32 section-fade-in bg-white dark:bg-black border-b border-zinc-200/80 dark:border-zinc-800 relative">
             <div class="container mx-auto px-6 max-w-6xl relative z-10">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">About Me</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mt-2.5 text-base md:text-lg font-medium">Computer Science Undergraduate & Software Developer</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">About Me</h2>
+                    <p class="text-zinc-600 dark:text-zinc-300 mt-2.5 text-base md:text-lg font-medium">Computer Science Undergraduate & Software Developer</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                     <!-- Bio Card (Interactive 3D Tilt) -->
-                    <div class="interactive-card bg-slate-50/80 dark:bg-slate-950/80 p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300">
+                    <div class="interactive-card bg-zinc-50/80 dark:bg-[#0a0a0a]/80 p-8 md:p-10 rounded-2xl shadow-lg border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300">
                         <div>
-                            <h3 class="text-xl font-bold mb-5 text-slate-900 dark:text-white flex items-center gap-2.5 border-b border-slate-200 dark:border-slate-800 pb-3.5">
-                                <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white rounded-xl border border-zinc-300 dark:border-zinc-700">
+                            <h3 class="text-xl font-bold mb-5 text-zinc-900 dark:text-zinc-50 flex items-center gap-2.5 border-b border-zinc-200 dark:border-zinc-800 pb-3.5">
+                                <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                                 </span>
                                 Personal Biography
                             </h3>
-                            <p class="text-slate-700 dark:text-slate-200 mb-4 leading-relaxed font-normal">I am a passionate and detail-oriented Computer Science undergraduate with a strong foundation in programming and problem-solving. My objective is to leverage my skills and enthusiasm to contribute to innovative projects, gain practical industry experience, and continuously expand my technical knowledge.</p>
-                            <p class="text-slate-700 dark:text-slate-200 leading-relaxed font-normal">I am a quick learner, adept at research, and comfortable working both independently and collaboratively in a team environment to achieve project goals.</p>
+                            <p class="text-zinc-700 dark:text-zinc-200 mb-4 leading-relaxed font-normal">I am a passionate and detail-oriented Computer Science undergraduate with a strong foundation in programming and problem-solving. My objective is to leverage my skills and enthusiasm to contribute to innovative projects, gain practical industry experience, and continuously expand my technical knowledge.</p>
+                            <p class="text-zinc-700 dark:text-zinc-200 leading-relaxed font-normal">I am a quick learner, adept at research, and comfortable working both independently and collaboratively in a team environment to achieve project goals.</p>
                         </div>
                     </div>
 
                     <!-- Strengths Card (Interactive 3D Tilt) -->
-                    <div id="strengths" class="interactive-card bg-slate-50/80 dark:bg-slate-950/80 p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300">
-                        <h3 class="text-xl font-bold mb-5 text-slate-900 dark:text-white flex items-center gap-2.5 border-b border-slate-200 dark:border-slate-800 pb-3.5">
-                            <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white rounded-xl border border-zinc-300 dark:border-zinc-700">
+                    <div id="strengths" class="interactive-card bg-zinc-50/80 dark:bg-[#0a0a0a]/80 p-8 md:p-10 rounded-2xl shadow-lg border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-5 text-zinc-900 dark:text-zinc-50 flex items-center gap-2.5 border-b border-zinc-200 dark:border-zinc-800 pb-3.5">
+                            <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                             </span>
                             Strengths & Capabilities
                         </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 my-auto">
                             <div class="flex items-start space-x-3.5">
-                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
+                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Detail-Oriented</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-xs mt-1 leading-normal">Meticulous and precise in every task I undertake.</p>
+                                    <h4 class="font-bold text-zinc-900 dark:text-zinc-50 text-base">Detail-Oriented</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-xs mt-1 leading-normal">Meticulous and precise in every task I undertake.</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-3.5">
-                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
+                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Problem Solving</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-xs mt-1 leading-normal">Efficiently identifies and resolves complex challenges.</p>
+                                    <h4 class="font-bold text-zinc-900 dark:text-zinc-50 text-base">Problem Solving</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-xs mt-1 leading-normal">Efficiently identifies and resolves complex challenges.</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-3.5">
-                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
+                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Researching</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-xs mt-1 leading-normal">Skilled at gathering and analyzing technical data.</p>
+                                    <h4 class="font-bold text-zinc-900 dark:text-zinc-50 text-base">Researching</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-xs mt-1 leading-normal">Skilled at gathering and analyzing technical data.</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-3.5">
-                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
+                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.28-1.25-.743-1.671M12 12c-3 0-6 2-6 4v2h12v-2c0-2-3-4-6-4z"></path></svg>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Team Player</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-xs mt-1 leading-normal">Works effectively both in teams and independently.</p>
+                                    <h4 class="font-bold text-zinc-900 dark:text-zinc-50 text-base">Team Player</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-xs mt-1 leading-normal">Works effectively both in teams and independently.</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-3.5">
-                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
+                                <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Prompt Engineering</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-xs mt-1 leading-normal">Adept at utilizing AI tools and crafting precise prompts to achieve optimal results.</p>
+                                    <h4 class="font-bold text-zinc-900 dark:text-zinc-50 text-base">Prompt Engineering</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-xs mt-1 leading-normal">Adept at utilizing AI tools and crafting precise prompts to achieve optimal results.</p>
                                 </div>
                             </div>
                         </div>
@@ -190,19 +190,19 @@
         </section>
 
         <!-- Work Experience (Full Width Alternating Section) -->
-        <section id="experience" class="py-24 md:py-32 section-fade-in bg-slate-50/90 dark:bg-slate-950 border-b border-slate-200/80 dark:border-slate-800/80 relative">
+        <section id="experience" class="py-24 md:py-32 section-fade-in bg-zinc-50/90 dark:bg-[#0a0a0a] border-b border-zinc-200/80 dark:border-zinc-800 relative">
             <div class="container mx-auto px-6 max-w-5xl relative z-10">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Work Experience</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mt-2.5 text-base md:text-lg font-medium">Professional experience and internships.</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">Work Experience</h2>
+                    <p class="text-zinc-600 dark:text-zinc-300 mt-2.5 text-base md:text-lg font-medium">Professional experience and internships.</p>
                 </div>
                 <div class="max-w-4xl mx-auto">
                     <div class="relative border-l-4 border-zinc-300 dark:border-zinc-700 pl-8 ml-4">
-                        <div class="absolute -left-3.5 top-0 w-6 h-6 bg-zinc-900 dark:bg-white rounded-full border-4 border-white dark:border-slate-950 shadow-md timeline-dot-anim"></div>
-                        <div class="interactive-card bg-white dark:bg-slate-900/90 p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-800/80 transition-all duration-300 hover:ring-2 hover:ring-zinc-400/50">
+                        <div class="absolute -left-3.5 top-0 w-6 h-6 bg-zinc-900 dark:bg-white rounded-full border-4 border-white dark:border-zinc-950 shadow-md timeline-dot-anim"></div>
+                        <div class="interactive-card bg-white dark:bg-zinc-900/40 p-8 md:p-10 rounded-2xl shadow-lg border border-zinc-200/80 dark:border-zinc-800 transition-all duration-300 hover:ring-2 hover:ring-zinc-400/50">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-3">
                                 <div>
-                                    <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">AI-ML Intern</h3>
+                                    <h3 class="text-2xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">AI-ML Intern</h3>
                                     <p class="text-zinc-800 dark:text-zinc-200 font-bold mt-1 text-base">All India Council for Technical Education · Virtual</p>
                                 </div>
                                 <span class="inline-flex items-center bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-100 text-sm font-bold px-4 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 self-start sm:self-auto">
@@ -213,14 +213,14 @@
                             <ul class="space-y-3.5 mt-6">
                                 <li class="flex items-start space-x-3.5 exp-list-item">
                                     <span class="flex-shrink-0 w-2 h-2 mt-2.5 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                    <span class="text-slate-700 dark:text-slate-200 text-base leading-relaxed font-normal">Built an offline Android app with 97.8% image recognition accuracy, by developing a Python Machine Learning pipeline and a native Kotlin camera interface.</span>
+                                    <span class="text-zinc-700 dark:text-zinc-200 text-base leading-relaxed font-normal">Built an offline Android app with 97.8% image recognition accuracy, by developing a Python Machine Learning pipeline and a native Kotlin camera interface.</span>
                                 </li>
                                 <li class="flex items-start space-x-3.5 exp-list-item">
                                     <span class="flex-shrink-0 w-2 h-2 mt-2.5 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                    <span class="text-slate-700 dark:text-slate-200 text-base leading-relaxed font-normal">Reduced the AI model size by 73% (down to 2.4 MB) for fast mobile performance, by training a MobileNetV2 network on 9,000 images and exporting it with TensorFlow Lite.</span>
+                                    <span class="text-zinc-700 dark:text-zinc-200 text-base leading-relaxed font-normal">Reduced the AI model size by 73% (down to 2.4 MB) for fast mobile performance, by training a MobileNetV2 network on 9,000 images and exporting it with TensorFlow Lite.</span>
                                 </li>
                             </ul>
-                            <div class="flex flex-wrap gap-2.5 mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+                            <div class="flex flex-wrap gap-2.5 mt-8 pt-6 border-t border-zinc-100 dark:border-zinc-800">
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3.5 py-1.5 rounded-lg cursor-default border border-zinc-300 dark:border-zinc-700">Python</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3.5 py-1.5 rounded-lg cursor-default border border-zinc-300 dark:border-zinc-700">TensorFlow</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3.5 py-1.5 rounded-lg cursor-default border border-zinc-300 dark:border-zinc-700">TensorFlow Lite</span>
@@ -228,7 +228,7 @@
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3.5 py-1.5 rounded-lg cursor-default border border-zinc-300 dark:border-zinc-700">Kotlin</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3.5 py-1.5 rounded-lg cursor-default border border-zinc-300 dark:border-zinc-700">Android Studio</span>
                             </div>
-                            <a href="https://github.com/saicharanyadav1102/CNN-image-classification-system" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-white w-full group shadow-sm">
+                            <a href="https://github.com/saicharanyadav1102/CNN-image-classification-system" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-zinc-50 w-full group shadow-sm">
                                 <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-11" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                                 Github
                             </a>
@@ -239,54 +239,54 @@
         </section>
 
         <!-- Projects (Full Width Alternating Section with Filter Tabs) -->
-        <section id="projects" class="py-24 md:py-32 section-fade-in bg-gradient-to-b from-white via-zinc-100/60 to-white dark:from-slate-900 dark:via-zinc-900/40 dark:to-slate-900 border-b border-slate-200/80 dark:border-slate-800/80 relative">
+        <section id="projects" class="py-24 md:py-32 section-fade-in bg-gradient-to-b from-white via-zinc-100/60 to-white dark:from-zinc-900 dark:via-zinc-900/40 dark:to-zinc-900 border-b border-zinc-200/80 dark:border-zinc-800 relative">
             <div class="container mx-auto px-6 max-w-6xl relative z-10">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Projects</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mt-2.5 text-base md:text-lg font-medium">Featured work I've built and shipped.</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">Projects</h2>
+                    <p class="text-zinc-600 dark:text-zinc-300 mt-2.5 text-base md:text-lg font-medium">Featured work I've built and shipped.</p>
                 </div>
 
                 <!-- Interactive Filter Tabs -->
                 <div class="flex flex-wrap justify-center gap-2.5 mb-12">
-                    <button class="project-filter-btn active bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold px-5 py-2.5 rounded-xl text-sm shadow-md transition-all duration-300 transform hover:-translate-y-0.5" data-filter="all">All Projects</button>
-                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-translate-y-0.5" data-filter="fullstack">Full-Stack Platforms</button>
-                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-translate-y-0.5" data-filter="frontend">Web & UI Design</button>
-                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-translate-y-0.5" data-filter="cloud">Cloud Architecture</button>
-                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-translate-y-0.5" data-filter="analytics">Data Analytics</button>
+                    <button class="project-filter-btn active bg-zinc-900 dark:bg-white text-zinc-50 dark:text-zinc-900 font-bold px-5 py-2.5 rounded-xl text-sm shadow-md transition-all duration-300 transform hover:-tranzinc-y-0.5" data-filter="all">All Projects</button>
+                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-tranzinc-y-0.5" data-filter="fullstack">Full-Stack Platforms</button>
+                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-tranzinc-y-0.5" data-filter="frontend">Web & UI Design</button>
+                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-tranzinc-y-0.5" data-filter="cloud">Cloud Architecture</button>
+                    <button class="project-filter-btn bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold px-5 py-2.5 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:border-zinc-500 dark:hover:border-zinc-400 transition-all duration-300 transform hover:-tranzinc-y-0.5" data-filter="analytics">Data Analytics</button>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger-children" id="projects-grid">
 
                     <!-- Project 1: TypeCode -->
-                    <div class="project-item interactive-card bg-white dark:bg-slate-900/90 rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300" data-category="fullstack">
+                    <div class="project-item interactive-card bg-white dark:bg-zinc-900/40 rounded-2xl shadow-lg overflow-hidden border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300" data-category="fullstack">
                         <div>
                             <div class="h-2 bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-800 dark:from-white dark:via-zinc-300 dark:to-zinc-200"></div>
                             <div class="p-8">
                                 <div class="flex items-center space-x-3.5 mb-4">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">TypeCode</h3>
+                                        <h3 class="text-xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">TypeCode</h3>
                                         <p class="text-xs text-zinc-800 dark:text-zinc-200 font-bold uppercase tracking-wider mt-0.5">Full-Stack Typing Practice Platform</p>
                                     </div>
                                 </div>
                                 <ul class="space-y-3 mb-6 mt-5">
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Created to help developers and students practice typing code syntax accurately and improve coding speed.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Created to help developers and students practice typing code syntax accurately and improve coding speed.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Built a full-stack web application featuring dual practice modes, live speed tracking, and user leaderboards.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Built a full-stack web application featuring dual practice modes, live speed tracking, and user leaderboards.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Developed using HTML, CSS, and JavaScript connected to a Python Flask backend, MySQL database, and secure login.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Developed using HTML, CSS, and JavaScript connected to a Python Flask backend, MySQL database, and secure login.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Delivered instant typing feedback, fast page loading, and a custom dark/light theme for better user experience.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Delivered instant typing feedback, fast page loading, and a custom dark/light theme for better user experience.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -299,7 +299,7 @@
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">CSS</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">JavaScript</span>
                             </div>
-                            <a href="https://github.com/saicharanyadav1102/TypeCode" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-white w-full group shadow-sm">
+                            <a href="https://github.com/saicharanyadav1102/TypeCode" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-zinc-50 w-full group shadow-sm">
                                 <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-11" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                                 Github
                             </a>
@@ -307,35 +307,35 @@
                     </div>
 
                     <!-- Project 2: Dynamic Portfolio -->
-                    <div class="project-item interactive-card bg-white dark:bg-slate-900/90 rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300" data-category="frontend">
+                    <div class="project-item interactive-card bg-white dark:bg-zinc-900/40 rounded-2xl shadow-lg overflow-hidden border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300" data-category="frontend">
                         <div>
                             <div class="h-2 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-700 dark:from-zinc-200 dark:via-white dark:to-zinc-300"></div>
                             <div class="p-8">
                                 <div class="flex items-center space-x-3.5 mb-4">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">Dynamic Portfolio Website</h3>
+                                        <h3 class="text-xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">Dynamic Portfolio Website</h3>
                                         <p class="text-xs text-zinc-800 dark:text-zinc-200 font-bold uppercase tracking-wider mt-0.5">Personal Branding & Showcase</p>
                                     </div>
                                 </div>
                                 <ul class="space-y-3 mb-6 mt-5">
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Created an interactive, cross-device platform to showcase live software projects and verify technical credentials.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Created an interactive, cross-device platform to showcase live software projects and verify technical credentials.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Built a responsive developer portfolio web application to showcase work experience, software projects, and skills.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Built a responsive developer portfolio web application to showcase work experience, software projects, and skills.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Developed the frontend using HTML5, Tailwind CSS, and JavaScript with custom scroll animations.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Developed the frontend using HTML5, Tailwind CSS, and JavaScript with custom scroll animations.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Delivered a fast, cross-device compatible platform with persistent Light/Dark theme switching to maximize user engagement.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Delivered a fast, cross-device compatible platform with persistent Light/Dark theme switching to maximize user engagement.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -346,7 +346,7 @@
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">CSS</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">JavaScript</span>
                             </div>
-                            <a href="https://github.com/saicharanyadav1102/Portfolio" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-white w-full group shadow-sm">
+                            <a href="https://github.com/saicharanyadav1102/Portfolio" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-zinc-50 w-full group shadow-sm">
                                 <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-11" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                                 Github
                             </a>
@@ -354,27 +354,27 @@
                     </div>
 
                     <!-- Project 3: GitHub Repo Analyst -->
-                    <div class="project-item interactive-card bg-white dark:bg-slate-900/90 rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300" data-category="fullstack">
+                    <div class="project-item interactive-card bg-white dark:bg-zinc-900/40 rounded-2xl shadow-lg overflow-hidden border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300" data-category="fullstack">
                         <div>
-                            <div class="h-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500"></div>
+                            <div class="h-2 bg-gradient-to-r from-zinc-700 via-zinc-500 to-zinc-700"></div>
                             <div class="p-8">
                                 <div class="flex items-center space-x-3.5 mb-4">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">GitHub Repo Analyst</h3>
+                                        <h3 class="text-xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">GitHub Repo Analyst</h3>
                                         <p class="text-xs text-zinc-800 dark:text-zinc-200 font-bold uppercase tracking-wider mt-0.5">An AI-powered agent</p>
                                     </div>
                                 </div>
                                 <ul class="space-y-3 mb-6 mt-5">
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Built a custom AI agent using LangChain and GenAI, integrating custom tools with the GitHub API to autonomously navigate repositories, read files, and search commits based on user prompts.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Built a custom AI agent using LangChain and GenAI, integrating custom tools with the GitHub API to autonomously navigate repositories, read files, and search commits based on user prompts.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Architected a full-stack solution by connecting the Python backend to a Streamlit frontend, resulting in a customer-facing application that instantly extracts complex codebase logic through natural language.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Architected a full-stack solution by connecting the Python backend to a Streamlit frontend, resulting in a customer-facing application that instantly extracts complex codebase logic through natural language.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -386,7 +386,7 @@
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">Gemini API</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">Streamlit</span>
                             </div>
-                            <a href="https://github.com/saicharanyadav1102/GRA_AGENT" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-white w-full group shadow-sm">
+                            <a href="https://github.com/saicharanyadav1102/GRA_AGENT" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-zinc-50 w-full group shadow-sm">
                                 <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-11" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                                 Github
                             </a>
@@ -394,27 +394,27 @@
                     </div>
 
                     <!-- Project 4: PhishGuard -->
-                    <div class="project-item interactive-card bg-white dark:bg-slate-900/90 rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300" data-category="fullstack">
+                    <div class="project-item interactive-card bg-white dark:bg-zinc-900/40 rounded-2xl shadow-lg overflow-hidden border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300" data-category="fullstack">
                         <div>
-                            <div class="h-2 bg-gradient-to-r from-red-500 via-rose-500 to-pink-500"></div>
+                            <div class="h-2 bg-gradient-to-r from-red-500 via-zinc-500 to-zinc-700"></div>
                             <div class="p-8">
                                 <div class="flex items-center space-x-3.5 mb-4">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">PhishGuard</h3>
+                                        <h3 class="text-xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">PhishGuard</h3>
                                         <p class="text-xs text-zinc-800 dark:text-zinc-200 font-bold uppercase tracking-wider mt-0.5">Behavioral Threat Detection</p>
                                     </div>
                                 </div>
                                 <ul class="space-y-3 mb-6 mt-5">
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Developed a privacy-preserving JavaScript browser extension and Python/Flask REST API utilizing a Random Forest classifier to achieve 96.8% accuracy in real-time zero-day phishing detection.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Developed a privacy-preserving JavaScript browser extension and Python/Flask REST API utilizing a Random Forest classifier to achieve 96.8% accuracy in real-time zero-day phishing detection.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Engineered a low-latency (&lt;150ms) client-side telemetry pipeline for continuous threat monitoring, extracting behavioral features via DOM analysis and HTTP redirection tracking.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Engineered a low-latency (&lt;150ms) client-side telemetry pipeline for continuous threat monitoring, extracting behavioral features via DOM analysis and HTTP redirection tracking.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -426,7 +426,7 @@
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">Flask</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">Scikit-Learn</span>
                             </div>
-                            <a href="https://github.com/saicharanyadav1102/PhisGuard" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-white w-full group shadow-sm">
+                            <a href="https://github.com/saicharanyadav1102/PhisGuard" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-zinc-50 w-full group shadow-sm">
                                 <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-11" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                                 Github
                             </a>
@@ -434,27 +434,27 @@
                     </div>
 
                     <!-- Project 5: AWS Cloud Architecture -->
-                    <div class="project-item interactive-card bg-white dark:bg-slate-900/90 rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300" data-category="cloud">
+                    <div class="project-item interactive-card bg-white dark:bg-zinc-900/40 rounded-2xl shadow-lg overflow-hidden border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300" data-category="cloud">
                         <div>
-                            <div class="h-2 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500"></div>
+                            <div class="h-2 bg-gradient-to-r from-zinc-700 via-zinc-500 to-zinc-700"></div>
                             <div class="p-8">
                                 <div class="flex items-center space-x-3.5 mb-4">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">AWS Cloud Architecture</h3>
+                                        <h3 class="text-xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">AWS Cloud Architecture</h3>
                                         <p class="text-xs text-zinc-800 dark:text-zinc-200 font-bold uppercase tracking-wider mt-0.5">Scalable & Highly Available</p>
                                     </div>
                                 </div>
                                 <ul class="space-y-3 mb-6 mt-5">
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Architected a fault-tolerant, auto-scaling web infrastructure on AWS utilizing custom VPCs, EC2, Application Load Balancers (ALB), and Nginx across multiple Availability Zones.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Architected a fault-tolerant, auto-scaling web infrastructure on AWS utilizing custom VPCs, EC2, Application Load Balancers (ALB), and Nginx across multiple Availability Zones.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Optimized backend performance and data persistence by integrating Amazon RDS, EFS, and S3, while accelerating global content delivery via Route 53 and CloudFront.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Optimized backend performance and data persistence by integrating Amazon RDS, EFS, and S3, while accelerating global content delivery via Route 53 and CloudFront.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -472,31 +472,31 @@
                     </div>
 
                     <!-- Project 6: PaySprint Credit Risk Analysis -->
-                    <div class="project-item interactive-card bg-white dark:bg-slate-900/90 rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300" data-category="analytics">
+                    <div class="project-item interactive-card bg-white dark:bg-zinc-900/40 rounded-2xl shadow-lg overflow-hidden border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300" data-category="analytics">
                         <div>
-                            <div class="h-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500"></div>
+                            <div class="h-2 bg-gradient-to-r from-zinc-700 via-zinc-500 to-zinc-700"></div>
                             <div class="p-8">
                                 <div class="flex items-center space-x-3.5 mb-4">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">PaySprint</h3>
+                                        <h3 class="text-xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">PaySprint</h3>
                                         <p class="text-xs text-zinc-800 dark:text-zinc-200 font-bold uppercase tracking-wider mt-0.5">Credit Risk Analysis for Gig Economy</p>
                                     </div>
                                 </div>
                                 <ul class="space-y-3 mb-6 mt-5">
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Conducted an end-to-end exploratory data analysis on 15 months of digital lending data to uncover a major revenue bottleneck: a 40% false-rejection rate for creditworthy gig workers.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Conducted an end-to-end exploratory data analysis on 15 months of digital lending data to uncover a major revenue bottleneck: a 40% false-rejection rate for creditworthy gig workers.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Engineered a robust data cleaning pipeline for 7,000+ records and designed the go-to-market strategy for an alternative credit-scoring engine.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Engineered a robust data cleaning pipeline for 7,000+ records and designed the go-to-market strategy for an alternative credit-scoring engine.</span>
                                     </li>
                                     <li class="flex items-start space-x-2.5">
                                         <span class="flex-shrink-0 w-2 h-2 mt-2 bg-zinc-900 dark:bg-white rounded-full"></span>
-                                        <span class="text-slate-700 dark:text-slate-200 text-sm leading-relaxed font-normal">Delivered an interactive dashboard tracking rejection vs. default KPIs, projecting a 15% increase in approvals at zero CAC.</span>
+                                        <span class="text-zinc-700 dark:text-zinc-200 text-sm leading-relaxed font-normal">Delivered an interactive dashboard tracking rejection vs. default KPIs, projecting a 15% increase in approvals at zero CAC.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -509,7 +509,7 @@
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">Plotly</span>
                                 <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-bold px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700">Jupyter Notebook</span>
                             </div>
-                            <a href="https://github.com/saicharanyadav1102/Credit_Risk_Analysis" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-white w-full group shadow-sm">
+                            <a href="https://github.com/saicharanyadav1102/Credit_Risk_Analysis" target="_blank" rel="noopener noreferrer" class="github-popup-btn inline-flex items-center justify-center gap-2.5 mt-5 pt-3.5 pb-3.5 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/60 text-sm font-bold text-zinc-900 dark:text-zinc-50 w-full group shadow-sm">
                                 <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-11" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
                                 GitHub
                             </a>
@@ -520,195 +520,195 @@
         </section>
 
         <!-- Technical Skills (Full Width Section) -->
-        <section id="skills" class="py-24 md:py-32 section-fade-in bg-slate-50/90 dark:bg-slate-950 border-b border-slate-200/80 dark:border-slate-800/80 relative">
+        <section id="skills" class="py-24 md:py-32 section-fade-in bg-zinc-50/90 dark:bg-[#0a0a0a] border-b border-zinc-200/80 dark:border-zinc-800 relative">
             <div class="container mx-auto px-6 max-w-5xl relative z-10">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Technical Skills</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mt-2.5 text-base md:text-lg font-medium">A summary of my technical proficiency across languages and tools.</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">Technical Skills</h2>
+                    <p class="text-zinc-600 dark:text-zinc-300 mt-2.5 text-base md:text-lg font-medium">A summary of my technical proficiency across languages and tools.</p>
                 </div>
-                <div class="interactive-card bg-white dark:bg-slate-900/90 p-8 md:p-12 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-800/80 transition-all duration-300">
+                <div class="interactive-card bg-white dark:bg-zinc-900/40 p-8 md:p-12 rounded-2xl shadow-lg border border-zinc-200/80 dark:border-zinc-800 transition-all duration-300">
                     <div class="marquee-container w-full overflow-hidden relative cursor-grab active:cursor-grabbing">
                         <div class="flex gap-8 w-max animate-marquee hover:[animation-play-state:paused]">
                             
                         <!-- Languages & Databases -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 dark:from-blue-500/10 dark:to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Languages & Databases
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Python</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">JavaScript</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">HTML5</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">CSS3</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">MySQL</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Python</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">JavaScript</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">HTML5</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">CSS3</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">MySQL</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- AI/ML & Data -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-500/5 dark:from-emerald-500/10 dark:to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     AI/ML & Data
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">GenAI</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">TensorFlow</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">PySpark</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Pandas</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Flask</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">LLMs</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">LangChain</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Streamlit</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">NumPy</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">GenAI</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">TensorFlow</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">PySpark</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Pandas</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Flask</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">LLMs</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">LangChain</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Streamlit</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">NumPy</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- Core Concepts -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5 dark:from-amber-500/10 dark:to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
                                     <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Core Concepts
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">DSA</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">OOP</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">DBMS</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Operating Systems</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Computer Networks</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">DSA</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">OOP</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">DBMS</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Operating Systems</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Computer Networks</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Cloud & Data Engineering -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-sky-500/5 dark:from-cyan-500/10 dark:to-sky-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-sky-500/5 dark:from-zinc-700/10 dark:to-sky-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Cloud & Data Engineering
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">AWS (EC2, S3, RDS, VPC, ALB, Auto Scaling)</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">AWS (EC2, S3, RDS, VPC, ALB, Auto Scaling)</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Developer Tools -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-pink-500/5 dark:from-rose-500/10 dark:to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Developer Tools
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Git</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">GitHub</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Visual Studio Code</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Google Colab</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Antigravity</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Android Studio</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Git</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">GitHub</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Visual Studio Code</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Google Colab</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Antigravity</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Android Studio</span>
                                 </div>
                             </div>
                         </div>
                             <!-- DUPLICATE FOR SEAMLESS LOOP -->
                             
                         <!-- Languages & Databases -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 dark:from-blue-500/10 dark:to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Languages & Databases
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Python</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">JavaScript</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">HTML5</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">CSS3</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">MySQL</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Python</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">JavaScript</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">HTML5</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">CSS3</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">MySQL</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- AI/ML & Data -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-500/5 dark:from-emerald-500/10 dark:to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     AI/ML & Data
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">GenAI</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">TensorFlow</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">PySpark</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Pandas</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Flask</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">LLMs</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">LangChain</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Streamlit</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">NumPy</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">GenAI</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">TensorFlow</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">PySpark</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Pandas</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Flask</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">LLMs</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">LangChain</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Streamlit</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">NumPy</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- Core Concepts -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5 dark:from-amber-500/10 dark:to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
                                     <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Core Concepts
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">DSA</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">OOP</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">DBMS</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Operating Systems</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Computer Networks</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">DSA</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">OOP</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">DBMS</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Operating Systems</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Computer Networks</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Cloud & Data Engineering -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-sky-500/5 dark:from-cyan-500/10 dark:to-sky-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-sky-500/5 dark:from-zinc-700/10 dark:to-sky-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Cloud & Data Engineering
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">AWS (EC2, S3, RDS, VPC, ALB, Auto Scaling)</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">AWS (EC2, S3, RDS, VPC, ALB, Auto Scaling)</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Developer Tools -->
-                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-slate-900 shadow-md border border-slate-200 dark:border-slate-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-pink-500/5 dark:from-rose-500/10 dark:to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div class="group relative p-6 w-[350px] md:w-[400px] shrink-0 rounded-2xl bg-white dark:bg-black shadow-md border border-zinc-200 dark:border-zinc-800 transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-700/5 to-zinc-700/5 dark:from-zinc-700/10 dark:to-zinc-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div class="relative z-10">
-                                <h3 class="text-lg font-bold mb-5 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 pb-3 flex items-center gap-2.5">
-                                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
+                                <h3 class="text-lg font-bold mb-5 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700/80 pb-3 flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-zinc-100 shadow-sm transition-transform duration-500 group-hover:scale-150"></span>
                                     Developer Tools
                                 </h3>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Git</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">GitHub</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Visual Studio Code</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Google Colab</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Antigravity</span>
-                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 shadow-sm">Android Studio</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Git</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">GitHub</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Visual Studio Code</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Google Colab</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Antigravity</span>
+                                    <span class="tech-pill bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3.5 py-1.5 rounded-lg text-sm font-bold border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-900 transition-all duration-300 cursor-pointer transform hover:-tranzinc-y-0.5 shadow-sm">Android Studio</span>
                                 </div>
                             </div>
                         </div>
@@ -720,42 +720,42 @@
         </section>
 
         <!-- Education & Achievements (Full Width Alternating Section) -->
-        <section id="education" class="py-24 md:py-32 section-fade-in bg-gradient-to-b from-white via-slate-50/50 to-white dark:from-slate-900 dark:via-slate-900/50 dark:to-slate-900 border-b border-slate-200/80 dark:border-slate-800/80 relative">
+        <section id="education" class="py-24 md:py-32 section-fade-in bg-gradient-to-b from-white via-zinc-50/50 to-white dark:from-zinc-900 dark:via-zinc-900/50 dark:to-zinc-900 border-b border-zinc-200/80 dark:border-zinc-800 relative">
             <div class="container mx-auto px-6 max-w-5xl relative z-10">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Education & Achievements</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mt-2.5 text-base md:text-lg font-medium">My academic journey and accomplishments.</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">Education & Achievements</h2>
+                    <p class="text-zinc-600 dark:text-zinc-300 mt-2.5 text-base md:text-lg font-medium">My academic journey and accomplishments.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                     <!-- Education Card -->
-                    <div class="interactive-card bg-white dark:bg-slate-900/90 p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300">
+                    <div class="interactive-card bg-white dark:bg-zinc-900/40 p-8 md:p-10 rounded-2xl shadow-lg border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300">
                         <div>
-                            <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-3.5 flex items-center gap-2.5">
-                                <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white rounded-xl border border-zinc-300 dark:border-zinc-700">
+                            <h3 class="text-xl font-bold mb-6 text-zinc-900 dark:text-zinc-50 border-b border-zinc-100 dark:border-zinc-800 pb-3.5 flex items-center gap-2.5">
+                                <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
                                 </span>
                                 Academic Timeline
                             </h3>
                             <div class="relative border-l-2 border-zinc-300 dark:border-zinc-700 pl-6 space-y-8 ml-2">
                                 <div class="relative">
-                                    <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-zinc-900 dark:bg-white rounded-full border-2 border-white dark:border-slate-950 shadow"></div>
+                                    <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-zinc-900 dark:bg-white rounded-full border-2 border-white dark:border-zinc-950 shadow"></div>
                                     <p class="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">2022 - 2026</p>
-                                    <h4 class="font-extrabold text-base text-slate-900 dark:text-white mt-1">B.Tech, Computer Science & Engineering</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-sm mt-0.5">Mohan Babu University</p>
+                                    <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50 mt-1">B.Tech, Computer Science & Engineering</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-0.5">Mohan Babu University</p>
                                     <p class="text-xs text-zinc-900 dark:text-zinc-100 font-bold mt-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 inline-block px-3 py-1 rounded-md">CPI: 8.34</p>
                                 </div>
                                 <div class="relative">
-                                    <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-zinc-900 dark:bg-white rounded-full border-2 border-white dark:border-slate-950 shadow"></div>
+                                    <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-zinc-900 dark:bg-white rounded-full border-2 border-white dark:border-zinc-950 shadow"></div>
                                     <p class="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">2022</p>
-                                    <h4 class="font-extrabold text-base text-slate-900 dark:text-white mt-1">BIEAP (Physics, Chemistry, Math)</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-sm mt-0.5">Sri Viveka Jr College</p>
+                                    <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50 mt-1">BIEAP (Physics, Chemistry, Math)</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-0.5">Sri Viveka Jr College</p>
                                     <p class="text-xs text-zinc-900 dark:text-zinc-100 font-bold mt-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 inline-block px-3 py-1 rounded-md">Percentage: 95.5%</p>
                                 </div>
                                 <div class="relative">
-                                    <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-zinc-900 dark:bg-white rounded-full border-2 border-white dark:border-slate-950 shadow"></div>
+                                    <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-zinc-900 dark:bg-white rounded-full border-2 border-white dark:border-zinc-950 shadow"></div>
                                     <p class="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">2019</p>
-                                    <h4 class="font-extrabold text-base text-slate-900 dark:text-white mt-1">SSC Secondary Education</h4>
-                                    <p class="text-slate-600 dark:text-slate-300 text-sm mt-0.5">Vikas Vidya Vihar EM High School</p>
+                                    <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50 mt-1">SSC Secondary Education</h4>
+                                    <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-0.5">Vikas Vidya Vihar EM High School</p>
                                     <p class="text-xs text-zinc-900 dark:text-zinc-100 font-bold mt-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 inline-block px-3 py-1 rounded-md">GPA: 10.00</p>
                                 </div>
                             </div>
@@ -763,10 +763,10 @@
                     </div>
 
                     <!-- Achievements Card -->
-                    <div class="interactive-card bg-white dark:bg-slate-900/90 p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-800/80 flex flex-col justify-between transition-all duration-300">
+                    <div class="interactive-card bg-white dark:bg-zinc-900/40 p-8 md:p-10 rounded-2xl shadow-lg border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between transition-all duration-300">
                         <div>
-                            <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-3.5 flex items-center gap-2.5">
-                                <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white rounded-xl border border-zinc-300 dark:border-zinc-700">
+                            <h3 class="text-xl font-bold mb-6 text-zinc-900 dark:text-zinc-50 border-b border-zinc-100 dark:border-zinc-800 pb-3.5 flex items-center gap-2.5">
+                                <span class="p-2 bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 rounded-xl border border-zinc-300 dark:border-zinc-700">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                                 </span>
                                 Certifications & Awards
@@ -774,42 +774,42 @@
                             <div class="space-y-6">
                                 <!-- IEEE Presenter -->
                                 <div class="flex items-start space-x-3.5">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-extrabold text-base text-slate-900 dark:text-white">IEEE Conference Presenter</h4>
-                                        <p class="text-slate-600 dark:text-slate-300 text-sm mt-1 leading-normal font-normal">Successfully presented a research paper on behavioral phishing detection at the International Conference on Intelligent Computing and Control Systems (ICICCS 2026).</p>
+                                        <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50">IEEE Conference Presenter</h4>
+                                        <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-1 leading-normal font-normal">Successfully presented a research paper on behavioral phishing detection at the International Conference on Intelligent Computing and Control Systems (ICICCS 2026).</p>
                                     </div>
                                 </div>
                                 <!-- Oracle -->
-                                <div class="flex items-start space-x-3.5 pt-6 border-t border-slate-100 dark:border-slate-800">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
+                                <div class="flex items-start space-x-3.5 pt-6 border-t border-zinc-100 dark:border-zinc-800">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-extrabold text-base text-slate-900 dark:text-white">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h4>
-                                        <p class="text-slate-600 dark:text-slate-300 text-sm mt-1 leading-normal font-normal">Certified by Oracle.</p>
+                                        <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h4>
+                                        <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-1 leading-normal font-normal">Certified by Oracle.</p>
                                     </div>
                                 </div>
                                 <!-- AI-ML Internship -->
-                                <div class="flex items-start space-x-3.5 pt-6 border-t border-slate-100 dark:border-slate-800">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
+                                <div class="flex items-start space-x-3.5 pt-6 border-t border-zinc-100 dark:border-zinc-800">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-extrabold text-base text-slate-900 dark:text-white">AI-ML Internship Certification</h4>
-                                        <p class="text-slate-600 dark:text-slate-300 text-sm mt-1 leading-normal font-normal">Certified by AICTE.</p>
+                                        <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50">AI-ML Internship Certification</h4>
+                                        <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-1 leading-normal font-normal">Certified by AICTE.</p>
                                     </div>
                                 </div>
                                 <!-- APPUSMA -->
-                                <div class="flex items-start space-x-3.5 pt-6 border-t border-slate-100 dark:border-slate-800">
-                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-white p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
+                                <div class="flex items-start space-x-3.5 pt-6 border-t border-zinc-100 dark:border-zinc-800">
+                                    <div class="bg-zinc-100 dark:bg-zinc-800/80 text-zinc-900 dark:text-zinc-50 p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 flex-shrink-0 mt-0.5">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.539 1.118l-3.975-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-extrabold text-base text-slate-900 dark:text-white">APPUSMA District-Level Academic Contest (2019)</h4>
-                                        <p class="text-slate-600 dark:text-slate-300 text-sm mt-1 leading-relaxed font-normal">Recognized as one of the four outstanding students selected for the prestigious District Level for excellence in analytical thinking and problem-solving.</p>
+                                        <h4 class="font-extrabold text-base text-zinc-900 dark:text-zinc-50">APPUSMA District-Level Academic Contest (2019)</h4>
+                                        <p class="text-zinc-600 dark:text-zinc-300 text-sm mt-1 leading-relaxed font-normal">Recognized as one of the four outstanding students selected for the prestigious District Level for excellence in analytical thinking and problem-solving.</p>
                                     </div>
                                 </div>
                             </div>
@@ -820,11 +820,11 @@
         </section>
 
         <!-- Contact Section (Full Width Alternating Section) -->
-        <section id="contact" class="py-24 md:py-32 section-fade-in text-left bg-zinc-950 text-white relative overflow-hidden">
+        <section id="contact" class="py-24 md:py-32 section-fade-in text-left bg-zinc-950 text-zinc-50 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-tr from-zinc-900 via-zinc-950 to-zinc-900 pointer-events-none"></div>
             <div class="container mx-auto px-6 max-w-5xl relative z-10">
                 <div class="text-center max-w-2xl mx-auto mb-14">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">Get In Touch</h2>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-50 tracking-tight">Get In Touch</h2>
                     <p class="text-zinc-300 text-base md:text-lg mt-3.5 leading-relaxed font-normal">I'm currently seeking opportunities to apply my engineering skills and grow as a software developer. Feel free to reach out using the form below or directly via email.</p>
                 </div>
 
@@ -833,18 +833,18 @@
                     <div class="md:col-span-7 interactive-card bg-zinc-900/90 p-6 md:p-8 rounded-2xl border border-zinc-800 shadow-2xl transition-all duration-300">
                         <form id="contact-form" class="space-y-5" onsubmit="return false;">
                             <div>
-                                <label for="sender-name" class="block text-sm font-bold text-white mb-2">Your Name</label>
-                                <input type="text" id="sender-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-zinc-950/90 border border-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-white font-medium text-sm transition">
+                                <label for="sender-name" class="block text-sm font-bold text-zinc-50 mb-2">Your Name</label>
+                                <input type="text" id="sender-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-zinc-950/90 border border-zinc-800 text-zinc-50 focus:outline-none focus:ring-2 focus:ring-white font-medium text-sm transition">
                             </div>
                             <div>
-                                <label for="sender-email" class="block text-sm font-bold text-white mb-2">Your Email</label>
-                                <input type="email" id="sender-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-zinc-950/90 border border-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-white font-medium text-sm transition">
+                                <label for="sender-email" class="block text-sm font-bold text-zinc-50 mb-2">Your Email</label>
+                                <input type="email" id="sender-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-zinc-950/90 border border-zinc-800 text-zinc-50 focus:outline-none focus:ring-2 focus:ring-white font-medium text-sm transition">
                             </div>
                             <div>
-                                <label for="sender-message" class="block text-sm font-bold text-white mb-2">Message</label>
-                                <textarea id="sender-message" rows="4" required placeholder="Hi Saicharan, I'd like to discuss a project..." class="w-full px-4 py-3 rounded-xl bg-zinc-950/90 border border-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-white font-medium text-sm transition"></textarea>
+                                <label for="sender-message" class="block text-sm font-bold text-zinc-50 mb-2">Message</label>
+                                <textarea id="sender-message" rows="4" required placeholder="Hi Saicharan, I'd like to discuss a project..." class="w-full px-4 py-3 rounded-xl bg-zinc-950/90 border border-zinc-800 text-zinc-50 focus:outline-none focus:ring-2 focus:ring-white font-medium text-sm transition"></textarea>
                             </div>
-                            <button type="submit" id="contact-submit-btn" class="w-full flex items-center justify-center gap-2 bg-white hover:bg-zinc-200 text-zinc-950 px-6 py-4 rounded-xl font-extrabold text-base transition-all duration-300 shadow-lg transform hover:-translate-y-0.5">
+                            <button type="submit" id="contact-submit-btn" class="w-full flex items-center justify-center gap-2 bg-white hover:bg-zinc-200 text-zinc-950 px-6 py-4 rounded-xl font-extrabold text-base transition-all duration-300 shadow-lg transform hover:-tranzinc-y-0.5">
                                 <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                                 Send Message
                             </button>
@@ -854,11 +854,11 @@
                     <!-- Direct Contact Box -->
                     <div class="md:col-span-5 space-y-6 flex flex-col justify-between h-full">
                         <div class="interactive-card bg-zinc-900/90 p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300">
-                            <h3 class="text-sm font-bold text-white mb-3">Direct Contact Details</h3>
+                            <h3 class="text-sm font-bold text-zinc-50 mb-3">Direct Contact Details</h3>
                             <div class="space-y-3 text-xs text-zinc-300">
                                 <div class="flex items-center gap-2.5">
                                     <svg class="w-4 h-4 text-zinc-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9 6 9-6"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8"/></svg>
-                                    <a href="mailto:saicharanyadav1102@gmail.com" class="font-semibold text-white hover:text-zinc-300 underline">saicharanyadav1102@gmail.com</a>
+                                    <a href="mailto:saicharanyadav1102@gmail.com" class="font-semibold text-zinc-50 hover:text-zinc-300 underline">saicharanyadav1102@gmail.com</a>
                                 </div>
                                 <div class="flex items-center gap-2.5">
                                     <svg class="w-4 h-4 text-zinc-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -870,22 +870,22 @@
                 </div>
 
                 <!-- Confirmation Live Modal/Notification -->
-                <div id="bot-reply-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
-                    <div class="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 max-w-lg w-full rounded-2xl shadow-2xl overflow-hidden transform transition-all text-slate-900 dark:text-white">
-                        <div class="bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 px-6 py-4 flex items-center justify-between">
+                <div id="bot-reply-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-zinc-950/80 backdrop-blur-md p-4">
+                    <div class="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 max-w-lg w-full rounded-2xl shadow-2xl overflow-hidden transform transition-all text-zinc-900 dark:text-zinc-50">
+                        <div class="bg-zinc-900 dark:bg-white text-zinc-50 dark:text-zinc-950 px-6 py-4 flex items-center justify-between">
                             <div class="flex items-center gap-2.5">
-                                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+                                <span class="w-3 h-3 rounded-full bg-zinc-200 animate-pulse"></span>
                                 <h4 class="font-extrabold text-base">Message Sent Successfully!</h4>
                             </div>
                             <button id="close-modal-btn" class="opacity-80 hover:opacity-100 font-bold text-lg">&times;</button>
                         </div>
                         <div class="p-6 space-y-4 text-left">
                             <div class="text-sm text-zinc-700 dark:text-zinc-200 leading-relaxed bg-zinc-100 dark:bg-zinc-800 p-4 rounded-xl border border-zinc-200 dark:border-zinc-700">
-                                <p class="font-semibold text-zinc-900 dark:text-white mb-1">Hi <span id="modal-recipient-name">Friend</span>,</p>
+                                <p class="font-semibold text-zinc-900 dark:text-zinc-50 mb-1">Hi <span id="modal-recipient-name">Friend</span>,</p>
                                 <p>Thank you for getting in touch through my portfolio! I have received your message and will get back to you promptly.</p>
-                                <p class="mt-3 font-semibold text-zinc-900 dark:text-white">— Saicharan Yadav</p>
+                                <p class="mt-3 font-semibold text-zinc-900 dark:text-zinc-50">— Saicharan Yadav</p>
                             </div>
-                            <button id="modal-ok-btn" class="w-full bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-zinc-950 py-3 rounded-xl font-bold text-sm transition">
+                            <button id="modal-ok-btn" class="w-full bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 py-3 rounded-xl font-bold text-sm transition">
                                 Got It, Close Window
                             </button>
                         </div>
@@ -896,16 +896,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-100 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-800/80">
+    <footer class="bg-zinc-100 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800">
         <div class="container mx-auto px-6 py-8 text-center">
             <div class="flex justify-center mb-6 space-x-4">
-                <a href="https://linkedin.com/in/sai-charan112" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-popup-btn inline-flex items-center justify-center p-3 rounded-2xl bg-zinc-200/60 dark:bg-zinc-900 border border-zinc-300/60 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm">
+                <a href="https://linkedin.com/in/sai-charan112" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-popup-btn inline-flex items-center justify-center p-3 rounded-2xl bg-zinc-200/60 dark:bg-zinc-900 border border-zinc-300/60 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm">
                     <svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-11 group-hover:rotate-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
-                <a href="https://github.com/saicharanyadav1102" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-popup-btn inline-flex items-center justify-center p-3 rounded-2xl bg-zinc-200/60 dark:bg-zinc-900 border border-zinc-300/60 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm">
+                <a href="https://github.com/saicharanyadav1102" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-popup-btn inline-flex items-center justify-center p-3 rounded-2xl bg-zinc-200/60 dark:bg-zinc-900 border border-zinc-300/60 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm">
                     <svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-11 group-hover:-rotate-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
                 </a>
-                <a href="mailto:saicharanyadav1102@gmail.com" aria-label="Email" class="social-popup-btn inline-flex items-center justify-center p-3 rounded-2xl bg-zinc-200/60 dark:bg-zinc-900 border border-zinc-300/60 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm">
+                <a href="mailto:saicharanyadav1102@gmail.com" aria-label="Email" class="social-popup-btn inline-flex items-center justify-center p-3 rounded-2xl bg-zinc-200/60 dark:bg-zinc-900 border border-zinc-300/60 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-white dark:hover:text-zinc-950 transition-all duration-300 group shadow-sm">
                     <svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-11 group-hover:rotate-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9 6 9-6"/><path d="M21 8v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8"/></svg>
                 </a>
             </div>
